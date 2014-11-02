@@ -1,7 +1,110 @@
-#circle {
-    width: 50px;
-    height: 50px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    border-radius: 25px; 
+.circle {
+    width: 400px;
+    height: 400px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    border-radius: 200px; 
+	border-style:solid;
+	border-width: 1px;
+	background:white;
+
+		margin-left: auto;
+	margin-right: auto;
+	
+}
+
+#abcde{
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 500px;
+}
+
+#circle2 {
+    width: 420px;
+    height: 420px;
+    -webkit-border-radius: 210px;
+    -moz-border-radius: 210px;
+    border-radius: 210px; 
+	border-style:solid;
+	border-width: 1px;
+	
+		margin-left: auto;
+	margin-right: auto;
+	
+	margin-top:-412px;
+	/*margin-left: -10px;*/
+	z-index: -1;
+	
+	  background: -webkit-linear-gradient(red, blue); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(red, blue); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(black, white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(black, white); /* Standard syntax */
+	
+	animation-name: spin; 
+	animation-duration: 6s; /* 3 seconds */
+	animation-iteration-count: infinite; 
+	animation-timing-function: linear;
+}
+
+@keyframes spin {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
+
+.half{
+	position:absolute;
+	width:400px;
+	height:400px;
+	clip:rect(0px,200px,400px,0px);
+	-moz-border-radius:200px;
+	-webkit-border-radius:200px;
+	border-radius:200px;
+	
+	z-index: 10;
+}
+
+#half1.half{
+	background-color:blue;
+	-moz-transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	transform:rotate(45deg);
+	transition: all 1s ease;
+}
+
+#half1.half:hover{
+	background-color:brown;
+	
+	width:420px;
+	height:420px;
+	clip:rect(0px,210px,420px,0px);
+	-moz-border-radius:210px;
+	-webkit-border-radius:210px;
+	border-radius:210px;
+	margin-left: -10px;
+	margin-top: -10px;
+}
+
+
+#half2.half{
+	background-color:yellow;
+	-moz-transform:rotate(225deg);
+	-webkit-transform:rotate(225deg);
+	-o-transform:rotate(225deg);
+	transform:rotate(225deg);
+	transition: all 1s ease;
+}
+
+#half2.half:hover{
+	background-color:green;
+	
+	width:420px;
+	height:420px;
+	clip:rect(0px,210px,420px,0px);
+	-moz-border-radius:210px;
+	-webkit-border-radius:210px;
+	border-radius:210px;
+	margin-left: -10px;
+	margin-top: -10px;
 }
