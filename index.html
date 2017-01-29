@@ -133,11 +133,11 @@
 			<h2 id="projects">Projects</h2>
 			<p>Projects that I've worked on by expanding on University assignments or started from scrtach.</p>
 
-			<p><button onclick="toggle('spaceshooter')"><strong>SpaceShooter</strong></button>
-			<button onclick="toggle('wallmanager')"><strong>WallManager</strong></button>
-			<button onclick="toggle('traintrack')"><strong>TrainTrack</strong></button>
-			<button onclick="toggle('altitudeparser')"><strong>AltitudeParser</strong></button>
-			<button onclick="toggle('adventuregame')"><strong>AdventureGame</strong></button></p>
+			<p><button onclick="toggleProject('spaceshooter')"><strong>SpaceShooter</strong></button>
+			<button onclick="toggleProject('wallmanager')"><strong>WallManager</strong></button>
+			<button onclick="toggleProject('traintrack')"><strong>TrainTrack</strong></button>
+			<button onclick="toggleProject('altitudeparser')"><strong>AltitudeParser</strong></button>
+			<button onclick="toggleProject('adventuregame')"><strong>AdventureGame</strong></button></p>
 
 			<div class="project" id="spaceshooter">
 				<p id="p_title"><strong>SpaceShooter</strong></p>
@@ -195,7 +195,7 @@
 		    }
 		}
 		
-		toggleProject(id){
+		function toggleProject(id){
 		    var divsToHide = document.getElementsByClassName("project"); //divsToHide is an array
 		    for(var i = 0; i < divsToHide.length; i++){
 		        if(!(divsToHide[i].id === id))
