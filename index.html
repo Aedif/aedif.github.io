@@ -186,19 +186,22 @@
 	    }
 
 		function toggle(id) {
+		    var x = document.getElementById(id);
+		    if (x.style.display === 'none') {
+		        x.style.display = 'block';
+		        document.getElementById('id').scrollIntoView();
+		    } else {
+		        x.style.display = 'none';
+		    }
+		}
+		
+		toggleProject(id){
 		    var divsToHide = document.getElementsByClassName("project"); //divsToHide is an array
 		    for(var i = 0; i < divsToHide.length; i++){
 		        if(!(divsToHide[i].id === id))
 		        	divsToHide[i].style.display = "none";
 		    }
-
-		    var x = document.getElementById(id);
-		    if (x.style.display === 'none') {
-		        x.style.display = 'block';
-		        document.getElementById('projects').scrollIntoView();
-		    } else {
-		        x.style.display = 'none';
-		    }
+			toggle(id);
 		}
 	</script>
 </body>
