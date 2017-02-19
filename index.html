@@ -20,7 +20,6 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-91322704-1', 'auto');
   ga('send', 'pageview');
 </script>
@@ -144,6 +143,7 @@
 
 			<p><button onclick="toggleProject('spaceshooter')"><strong>SpaceShooter</strong></button>
 			<button onclick="toggleProject('wallmanager')"><strong>WallManager</strong></button>
+			<button onclick="toggleProject('ann')"><strong>ANN_Digits</strong></button></p>
 			<button onclick="toggleProject('traintrack')"><strong>TrainTrack</strong></button>
 			<button onclick="toggleProject('altitudeparser')"><strong>AltitudeParser</strong></button>
 			<button onclick="toggleProject('adventuregame')"><strong>AdventureGame</strong></button></p>
@@ -160,6 +160,15 @@
 				<p><strong>Language: </strong>Java</p>
 				<p>Windows slideshow wallpaper tracker. Given the update frequency of the windows wallpapaper, the program fetches the images and stores them in a buffer of a user provided size. The user can then select the images and apply tags and ratings to them. This information is stored within the image itself as windows compliant XMP metadata. Any tags saved in a IPTC segment are converted to XMP. Additionaly all previously used tags are stored in a file and are displayed in the 'tag window' for quick access in order of use frequency.</p>
 				<p><img class="gif" src="gallery.gif"/></p>
+			</div>
+
+			<div class="project" id="ann">
+				<p id="p_title"><strong>ANN_Digits</strong></p>
+				<p><strong>Language: </strong>Java</p>
+				<p>A Java implementation of a feed-forward Artificial Neural Network using stochastic gradient descent as the learning algorithm.</p>
+				<p>This work is based off of Michael Nielsen's book <a href="http://neuralnetworksanddeeplearning.com/index.html">'Neural Networks and Deep Learning.'</a></p>
+				<p> While any 1d array of normalized (0.0-1.0) values is applicable to the network the UI is designed to process <a href="http://yann.lecun.com/exdb/mnist/">MNIST</a>'s' handwritten digit database files. UI allows specification of multi-layered network with an input, output, and any number of hidden layers. Training data batch size, learning rate (÷ by batch size) and the number of repetitions of baches as epochs can also be specified. After each epoch as the network is being trained the UI displays sample digit images from the database files, the percentage of correctly predicted digits in the test sample, and total counts per correctly recognized digit.<a></p>
+				<p><img class="gif" src="ann.gif"/></p>
 			</div>
 
 			<div class="project" id="traintrack">
@@ -193,19 +202,17 @@
 	    for(var i = 0; i < divsToHide.length; i++){
 	        divsToHide[i].style.display = "none";
 	    }
-
 		function toggle(id) {
 		    var x = document.getElementById(id);
 		    if (x.style.display === 'none') {
 		        x.style.display = 'block';
-		        //document.getElementById(id).scrollIntoView();
 		    } else {
 		        x.style.display = 'none';
 		    }
 		}
 		
 		function toggleProject(id){
-		    var divsToHide = document.getElementsByClassName("project"); //divsToHide is an array
+		    var divsToHide = document.getElementsByClassName("project");
 		    for(var i = 0; i < divsToHide.length; i++){
 		        if(!(divsToHide[i].id === id))
 		        	divsToHide[i].style.display = "none";
