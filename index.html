@@ -1,223 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Martynas Vaitkus</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="blog, portfolio, Martynas Vaitkus, programmer">
-<meta name="author" content="">
-<meta name="description" content="">
-<link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
-<link rel="stylesheet" href="./pstyle.css">
- 
-<meta name="og:description" content="">
-<meta name="og:title" content="Martynas Vaitkus">
-<meta name="og:url" content="http://martynasvaitkus.com//">
-<meta name="og:type" content="article">
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-91322704-1', 'auto');
-  ga('send', 'pageview');
-</script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Martynas Vaitkus - Portfolio</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/1-col-portfolio.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-91322704-1', 'auto');
+      ga('send', 'pageview');
+    </script>
 </head>
+
 <body>
-	<div class="wrapper">
-		<div class="navbar">
-			<a id="author-name" class="alignable pull-left" href="http://martynasvaitkus.com/">Martynas Vaitkus</a>
-			<p id="contact">
-				<script>
-					emailE=('vaitkus.' + 'martynas@' + 'gmail' + '.' + 'com');
-					document.write(
-					  '<A HREF="mailto:' + emailE + '">' 
-					  + emailE + '</a>'
-					);
-				</script>
-			<NOSCRIPT>
-			  <em>
-			    Email address protected by JavaScript.<BR>
-			    Please enable JavaScript to view it.
-			  </em>
-			</NOSCRIPT>
-			
-			</p>
-		</div>
 
-		<div style="clear:both"></div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Main</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <script>
+                            emailE=('vaitkus.' + 'martynas@' + 'gmail' + '.' + 'com');
+                            document.write(
+                              '<A HREF="mailto:' + emailE + '">' 
+                              + emailE + '</a>'
+                            );
+                        </script>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
-		<hr>
-		<div class="content">
-			<h2 id="about-me">About Me</h2>
-			<p><img class="profile-picture" src="profile.jpg"/></p>
-			<p>Hi there, my name is Martynas Vaitkus and I'm a Computer Science undergraduate at University of Leicester.</p>
+    <!-- Page Content -->
+    <div class="container">
 
-			<h2>Education</h2>
-			<p><strong>University of Leicester (2013-2017)</strong><br> BSc Computer Science with Study Abroad</p>
-			<p><button onclick="toggle('modules')"><strong>Modules taken</strong></button></p>
-			<div id="modules">
-			<p>Year 3</p>
-			<ul>
-				<li>Advanced C++</li>
-				<li>Computational Intelligence and Software Engineering</li>
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+            <p><img class="profile-picture" src="res/profile.jpg" width="20%" align="right"/></p>
+                <h1 class="page-header">Hi there.<p><small>My name is Martynas Vaitkus and I'm a Computer Science undergraduate at University of Leicester.</small></p></h1>
+            </div>
+        </div>
+            <h2>Education</h2>
+            <h4><strong>University of Leicester (2013-2017)</strong><br> BSc Computer Science with Study Abroad</h4>
+            <p><button onclick="toggle('modules')"><strong>Modules taken</strong></button></p>
+            <div id="modules">
+            <p>Year 3</p>
+            <ul>
+                <li>Advanced C++</li>
+                <li>Computational Intelligence and Software Engineering</li>
 
-				<li>Big Data and Predictive Analysis (In progress)</li>
-				<li>Compression Methods for Multimedia (In Progress)</li>
-				<li>Computer Science Project (In Progress)</li>
-			</ul>
+                <li>Big Data and Predictive Analysis (In progress)</li>
+                <li>Compression Methods for Multimedia (In Progress)</li>
+                <li>Computer Science Project (In Progress)</li>
+            </ul>
 
-			<p>Year 2</p>
-			<ul>
-				<li>User Interfaces and HCI</li>
-				<li>Software Engineering and System Development</li>
-				<li>Automata, Languages and Computation</li>
-				<li>Software Project Management and Professionalism</li>
-				<li>Functional Programming</li>
-				<li>Software Engineering Project</li>
-				<li>Multimedia and Computer Graphics</li>
-				<li>Operating Systems, Networks and Distributed Systems</li>
-			</ul>
+            <p>Year 2</p>
+            <ul>
+                <li>User Interfaces and HCI</li>
+                <li>Software Engineering and System Development</li>
+                <li>Automata, Languages and Computation</li>
+                <li>Software Project Management and Professionalism</li>
+                <li>Functional Programming</li>
+                <li>Software Engineering Project</li>
+                <li>Multimedia and Computer Graphics</li>
+                <li>Operating Systems, Networks and Distributed Systems</li>
+            </ul>
 
-			<p>Year 1</p>
-			<ul>
-				<li>Program Design</li>
-				<li>Study Skills and Professional Practice</li>
-				<li>Discrete Structures</li>
-				<li>Computer Systems</li>
-				<li>Logic and Problem Solving</li>
-				<li>Data Structure and Development Environments</li>
-				<li>Databases and Web Applications</li>
-			</ul>
-			</div>
+            <p>Year 1</p>
+            <ul>
+                <li>Program Design</li>
+                <li>Study Skills and Professional Practice</li>
+                <li>Discrete Structures</li>
+                <li>Computer Systems</li>
+                <li>Logic and Problem Solving</li>
+                <li>Data Structure and Development Environments</li>
+                <li>Databases and Web Applications</li>
+            </ul>
+            </div>
 
-			<h4>Technologies used:</h4>
-			<ol>
-				<li>Java (extensively throughout the course)</li>
-				<li>SQL, Html, PHP, Js</li>
-				<li>Java3D</li>
-				<li>C++, C</li>
-				<li>Python</li>
-			</ol>
+            <h4>Technologies used:</h4>
+            <ol>
+                <li>Java (extensively throughout the course)</li>
+                <li>SQL, Html, PHP, Js</li>
+                <li>Java3D</li>
+                <li>C++, C</li>
+                <li>Python</li>
+            </ol>
 
-			<p><strong>Bedford College (2012-2013)</strong><br>BTEC Level 3 Extended Diploma in IT</p>
-			<p><button onclick="toggle('modules2')"><strong>Modules taken</strong></button></p>
-			<div id="modules2">
-			<p>Year 2</p>
-			<ul>
-				<li>Software Design and Development</li>
-				<li>Organisation System Security</li>
-				<li>Systems Analysis and Design</li>
-				<li>Object Orianted Programming</li>
-				<li>Database Design</li>
-				<li>Client Side Customisation of Web Pages</li>
-				<li>Developing Computer Games</li>
-				<li>Web Server Scrypting</li>
-			</ul>
+            <h4><strong>Bedford College (2012-2013)</strong><br>BTEC Level 3 Extended Diploma in IT</h4>
+            <p><button onclick="toggle('modules2')"><strong>Modules taken</strong></button></p>
+            <div id="modules2">
+            <p>Year 2</p>
+            <ul>
+                <li>Software Design and Development</li>
+                <li>Organisation System Security</li>
+                <li>Systems Analysis and Design</li>
+                <li>Object Orianted Programming</li>
+                <li>Database Design</li>
+                <li>Client Side Customisation of Web Pages</li>
+                <li>Developing Computer Games</li>
+                <li>Web Server Scrypting</li>
+            </ul>
 
-			<p>Year 1</p>
-			<ul>
-				<li>CCNA1 (Cisco Certified Network Associate)</li>
-				<li>CCNA2 (Cisco Certified Network Associate)</li>
-				<li>Communication and employability</li>
-				<li>Computer Systems</li>
-				<li>Controlling Systems Using IT</li>
-				<li>Event Driven Programming</li>
-				<li>Information Systems</li>
-				<li>Troubleshooting and Rrepair</li>
-				<li>Web Production</li>
-			</ul>
-			</div>
+            <p>Year 1</p>
+            <ul>
+                <li>CCNA1 (Cisco Certified Network Associate)</li>
+                <li>CCNA2 (Cisco Certified Network Associate)</li>
+                <li>Communication and employability</li>
+                <li>Computer Systems</li>
+                <li>Controlling Systems Using IT</li>
+                <li>Event Driven Programming</li>
+                <li>Information Systems</li>
+                <li>Troubleshooting and Rrepair</li>
+                <li>Web Production</li>
+            </ul>
+            </div>
 
-			<h4>Technologies used:</h4>
-			<ol>
-				<li>VisualBasic</li>
-				<li>Miscrosoft Suite</li>
-				<li>Arduino</li>
-				<li>HyperTerminal</li>
-			</ol>
+            <h4>Technologies used:</h4>
+            <ol>
+                <li>VisualBasic</li>
+                <li>Miscrosoft Suite</li>
+                <li>Arduino</li>
+                <li>HyperTerminal</li>
+            </ol>
 
-			<h2 id="projects">Projects</h2>
-			<p>Projects that I've worked on by expanding on University assignments or started from scratch.</p>
+        <hr>
 
-			<p><button onclick="toggleProject('spaceshooter')"><strong>SpaceShooter</strong></button>
-			<button onclick="toggleProject('wallmanager')"><strong>WallManager</strong></button>
-			<button onclick="toggleProject('ann')"><strong>ANN_Digits</strong></button></p>
-			<button onclick="toggleProject('traintrack')"><strong>TrainTrack</strong></button>
-			<button onclick="toggleProject('altitudeparser')"><strong>AltitudeParser</strong></button>
-			<button onclick="toggleProject('adventuregame')"><strong>AdventureGame</strong></button></p>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
 
-			<div class="project" id="spaceshooter">
-				<p id="p_title"><strong>SpaceShooter</strong></p>
-				<p><strong>Language: </strong>VisualBasic</p>
-				<p>A simple 'Asteroids' type game. Features asteroids that change direction upon partial destruction, gravity wells that pull in objects within their radius, and enemy spaceships that follow the player and drop stat upgrades upon death.</p>
-				<p><img class="gif" src="space.gif"/></p>
-			</div>
+            </div>
+            <!-- /.row -->
+        </footer>
 
-			<div class="project" id="wallmanager">
-				<p id="p_title"><strong>WallManager</strong></p>
-				<p><strong>Language: </strong>Java</p>
-				<p>Windows slideshow wallpaper tracker. Given the update frequency of the windows wallpapaper, the program fetches the images and stores them in a buffer of a user provided size. The user can then select the images and apply tags and ratings to them. This information is stored within the image itself as windows compliant XMP metadata. Any tags saved in a IPTC segment are converted to XMP. Additionaly all previously used tags are stored in a file and are displayed in the 'tag window' for quick access in order of use frequency.</p>
-				<p><img class="gif" src="gallery.gif"/></p>
-			</div>
+    </div>
+    <!-- /.container -->
 
-			<div class="project" id="ann">
-				<p id="p_title"><strong>ANN_Digits</strong></p>
-				<p><strong>Language: </strong>Java</p>
-				<p>A Java implementation of a feed-forward Artificial Neural Network using stochastic gradient descent as the learning algorithm.</p>
-				<p>This work is based on Michael Nielsen's book <a href="http://neuralnetworksanddeeplearning.com/index.html">'Neural Networks and Deep Learning.'</a></p>
-				<p> While any 1d array of normalized (0.0-1.0) values is applicable to the network the UI is designed to process <a href="http://yann.lecun.com/exdb/mnist/">MNIST</a>'s' handwritten digit database files. UI allows specification of multi-layered network with an input, output, and any number of hidden layers. Training data batch size, learning rate (÷ by batch size) and the number of repetitions of baches as epochs can also be specified. After each epoch as the network is being trained the UI displays sample digit images from the database files, the percentage of correctly predicted digits in the test sample, and total counts per correctly recognized digit.</p>
-				<p><img class="gif" src="ann.gif"/></p>
-			</div>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-			<div class="project" id="traintrack">
-				<p id="p_title"><strong>TrainTrack</strong></p>
-				<p><strong>Language: </strong>Java</p>
-				<p>A java3D train track simulation. Allows specification of a custom train track that the model train follows. The train can be sped up, slowed down, and stopped.</p>
-				<p><img class="gif" src="train.gif"/></p>
-			</div>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-			<div class="project" id="altitudeparser">
-				<p id="p_title"><strong>AltitudeParser</strong></p>
-				<p><strong>Language: </strong>Java</p>
-				<p>A parser for <a href="https://altitudegame.com/">Altitude</a> game image files. Allows reading/writing of the images from/to a compressed format. Images can also be overlayed over the outlines defined in the related .poly files.</p>
-				<p><img class="gif" src="alti2.gif"/></p>
-				<p><img class="gif" src="alti.gif"/></p>
-			</div>
+    <script>
+        document.getElementById('modules').style.display = "none";
+        document.getElementById('modules2').style.display = "none";
+        function toggle(id) {
+            var x = document.getElementById(id);
+            if (x.style.display === 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+    </script>
 
-			<div class="project" id="adventuregame">
-				<p id="p_title"><strong>AdventureGame</strong></p>
-				<p><strong>Language: </strong>Java</p>
-				<p>A very simple dungeon crawler. Maps come in a form of text files that define the layout of the dungeon. Dungeon consists of empty rooms, trap rooms that deal direct damage, treasure rooms that reward gold and/or health, and monster rooms where the player is forced to fight a random enemy. The goal is to visist every single treasure room.</p>
-				<p><img class="gif" src="adventure.gif"/></p>
-			</div>
-		</div>
-	</div>
-
-	<script>
-		document.getElementById('modules').style.display = "none";
-		document.getElementById('modules2').style.display = "none";
-	    var divsToHide = document.getElementsByClassName("project");
-	    for(var i = 0; i < divsToHide.length; i++){
-	        divsToHide[i].style.display = "none";
-	    }
-		function toggle(id) {
-		    var x = document.getElementById(id);
-		    if (x.style.display === 'none') {
-		        x.style.display = 'block';
-		    } else {
-		        x.style.display = 'none';
-		    }
-		}
-		
-		function toggleProject(id){
-		    var divsToHide = document.getElementsByClassName("project");
-		    for(var i = 0; i < divsToHide.length; i++){
-		        if(!(divsToHide[i].id === id))
-		        	divsToHide[i].style.display = "none";
-		    }
-			toggle(id);
-		}
-	</script>
 </body>
+
+</html>
