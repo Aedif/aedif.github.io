@@ -1,201 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
 
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Martynas Vaitkus - Portfolio</title>
+    <title>Martynas Vaitkus</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/1-col-portfolio.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-91322704-1', 'auto');
-      ga('send', 'pageview');
-    </script>
-</head>
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
 
-<body>
+  </head>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Main</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="projects.html">Projects</a>
-                    </li>
-                    <li>
-                        <script>
-                            emailE=('vaitkus.' + 'martynas@' + 'gmail' + '.' + 'com');
-                            document.write(
-                              '<A HREF="mailto:' + emailE + '">' 
-                              + emailE + '</a>'
-                            );
-                        </script>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Start Bootstrap</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="res/profile.jpg" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
-    <!-- Page Content -->
-    <div class="container">
+    <div class="container-fluid p-0">
 
-        <!-- Page Heading -->
-        <div class="row">
-            <div class="col-lg-12">
-            <p><img class="profile-picture" src="res/profile.jpg" width="20%" align="right"/></p>
-                <h1 class="page-header">Hi there.<p><small>My name is Martynas Vaitkus and I'm a Computer Science graduate from University of Leicester.</small></p></h1>
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-0">Vaitkus
+            <span class="text-primary">Martynas</span>
+          </h1>
+          <div class="subheading mb-5">Graduate Software Development Engineer
+            <a href="mailto:name@email.com">vaitkus.martynas@gmail.com</a>
+          </div>
+          <p class="mb-5">A Computer Science graduate and a current employee at Amadeus Services Ltd, wanting to pursue software development opportunities in Tokyo with particular interest in data processing/analysis.</p>
+          <ul class="list-inline list-social-icons mb-0">
+            <!-- <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li> -->
+            <li class="list-inline-item">
+              <a href="https://bitbucket.org/aedif/">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-bitbucket fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h2 class="mb-5">Education</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">University of Leicester</h3>
+              <div class="subheading mb-3">BSc Computer Science with Study Abroad</div>
+              <p>Grade: 1st-class honours</p>
+              <p><button onclick="toggle('modules')"><strong>Modules taken</strong></button></p>
+              <div id="modules">
+                <p>Year 3</p>
+                <ul>
+                    <li>Advanced C++</li>
+                    <li>Computational Intelligence and Software Engineering</li>
+    
+                    <li>Big Data and Predictive Analysis</li>
+                    <li>Compression Methods for Multimedia</li>
+                    <li>Computer Science Project</li>
+                </ul>
+    
+                <p>Year 2</p>
+                <ul>
+                    <li>User Interfaces and HCI</li>
+                    <li>Software Engineering and System Development</li>
+                    <li>Automata, Languages and Computation</li>
+                    <li>Software Project Management and Professionalism</li>
+                    <li>Functional Programming</li>
+                    <li>Software Engineering Project</li>
+                    <li>Multimedia and Computer Graphics</li>
+                    <li>Operating Systems, Networks and Distributed Systems</li>
+                </ul>
+    
+                <p>Year 1</p>
+                <ul>
+                    <li>Program Design</li>
+                    <li>Study Skills and Professional Practice</li>
+                    <li>Discrete Structures</li>
+                    <li>Computer Systems</li>
+                    <li>Logic and Problem Solving</li>
+                    <li>Data Structure and Development Environments</li>
+                    <li>Databases and Web Applications</li>
+                </ul>
+              </div>
+
+              <h5>Technologies used:</h5>
+              <ol>
+                  <li>Java (extensively throughout the course)</li>
+                  <li>SQL, Html, PHP, Js</li>
+                  <li>Java3D</li>
+                  <li>C++, C</li>
+                  <li>Python</li>
+              </ol>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">September 2013 - July 2017</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Bedford College</h3>
+              <div class="subheading mb-3">BTEC Level 3 Extended Diploma in IT</div>
+              <p>Grade: D*D*D*</p>
+              <p><button onclick="toggle('modules2')"><strong>Modules taken</strong></button></p>
             </div>
         </div>
-            <h2>Education</h2>
-            <h4><strong>University of Leicester (2013-2017)</strong><br> BSc Computer Science with Study Abroad</h4>
-            <p><button onclick="toggle('modules')"><strong>Modules taken</strong></button></p>
-            <div id="modules">
-            <p>Year 3</p>
-            <ul>
-                <li>Advanced C++</li>
-                <li>Computational Intelligence and Software Engineering</li>
+        <div id="modules2">
+          <p>Year 2</p>
+          <ul>
+              <li>Software Design and Development</li>
+              <li>Organisation System Security</li>
+              <li>Systems Analysis and Design</li>
+              <li>Object Orianted Programming</li>
+              <li>Database Design</li>
+              <li>Client Side Customisation of Web Pages</li>
+              <li>Developing Computer Games</li>
+              <li>Web Server Scrypting</li>
+          </ul>
 
-                <li>Big Data and Predictive Analysis</li>
-                <li>Compression Methods for Multimedia</li>
-                <li>Computer Science Project</li>
-            </ul>
+          <p>Year 1</p>
+          <ul>
+              <li>CCNA1 (Cisco Certified Network Associate)</li>
+              <li>CCNA2 (Cisco Certified Network Associate)</li>
+              <li>Communication and employability</li>
+              <li>Computer Systems</li>
+              <li>Controlling Systems Using IT</li>
+              <li>Event Driven Programming</li>
+              <li>Information Systems</li>
+              <li>Troubleshooting and Rrepair</li>
+              <li>Web Production</li>
+          </ul>
+          </div>
 
-            <p>Year 2</p>
-            <ul>
-                <li>User Interfaces and HCI</li>
-                <li>Software Engineering and System Development</li>
-                <li>Automata, Languages and Computation</li>
-                <li>Software Project Management and Professionalism</li>
-                <li>Functional Programming</li>
-                <li>Software Engineering Project</li>
-                <li>Multimedia and Computer Graphics</li>
-                <li>Operating Systems, Networks and Distributed Systems</li>
-            </ul>
+          <h5>Technologies used:</h5>
+          <ol>
+              <li>VisualBasic</li>
+              <li>Miscrosoft Suite</li>
+              <li>Arduino</li>
+              <li>HyperTerminal</li>
+          </ol>
+        <div class="resume-date text-md-right">
+          <span class="text-primary">September 2012 - July 2013</span>
+        </div>
+      </div>
+      </section>
 
-            <p>Year 1</p>
-            <ul>
-                <li>Program Design</li>
-                <li>Study Skills and Professional Practice</li>
-                <li>Discrete Structures</li>
-                <li>Computer Systems</li>
-                <li>Logic and Problem Solving</li>
-                <li>Data Structure and Development Environments</li>
-                <li>Databases and Web Applications</li>
-            </ul>
-            </div>
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+        <div class="my-auto">
+          <h2 class="mb-5">Projects</h2>
+                <!-- Project One -->
+                <div class="row">
+                  <div class="col-md-5">
+                      <h3>WallManager</h3>
+                      <h4>Language: Java</h4>
+                      <p>Windows slideshow wallpaper tracker. Given the update frequency of the windows wallpapaper, the program fetches the images and stores them in a buffer of a user provided size. The user can then select the images and apply tags and ratings to them. This information is stored within the image itself as windows compliant XMP metadata. Any tags saved in a IPTC segment are converted to XMP. Additionaly all previously used tags are stored in a file and are displayed in the 'tag window' for quick access in order of use frequency.</p>
+                      <a class="btn btn-primary" href="https://bitbucket.org/aedif/wallpaper-manager/">BitBucket<span class="glyphicon"></span></a>
+                  </div>
+                  <div class="col-md-7">
+                    <h5>Example video
+                      <a href="#">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-chevron-circle-right fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </h5>
+                      <video class="img-responsive" width="700" height="300" controls>
+                        <source src="res/gallery.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video> 
+                  </div>
+                </div>
+                <!-- /.row -->
 
-            <h4>Technologies used:</h4>
-            <ol>
-                <li>Java (extensively throughout the course)</li>
-                <li>SQL, Html, PHP, Js</li>
-                <li>Java3D</li>
-                <li>C++, C</li>
-                <li>Python</li>
-            </ol>
+                <hr>
 
-            <h4><strong>Bedford College (2012-2013)</strong><br>BTEC Level 3 Extended Diploma in IT</h4>
-            <p><button onclick="toggle('modules2')"><strong>Modules taken</strong></button></p>
-            <div id="modules2">
-            <p>Year 2</p>
-            <ul>
-                <li>Software Design and Development</li>
-                <li>Organisation System Security</li>
-                <li>Systems Analysis and Design</li>
-                <li>Object Orianted Programming</li>
-                <li>Database Design</li>
-                <li>Client Side Customisation of Web Pages</li>
-                <li>Developing Computer Games</li>
-                <li>Web Server Scrypting</li>
-            </ul>
+                <!-- Project Two -->
+                <div class="row">
+                  <div class="col-md-7">
+                      <video class="img-responsive" width="700" height="300" controls>
+                        <source src="res/alti.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video> 
+                  </div>
+                  <div class="col-md-5">
+                      <h3>AltitudeParser</h3>
+                      <h4>Language: Java</h4>
+                      <p>A parser for <a href="https://altitudegame.com/">Altitude</a> game image files. Allows reading/writing of the images from/to a compressed format. Images can also be overlayed over the outlines defined in the related .poly files.</p>
+                      <a class="btn btn-primary" href="https://bitbucket.org/aedif/altitudeskintool/">BitBucket<span class="glyphicon"></span></a>
+                  </div>
+                </div>
+                <!-- /.row -->
 
-            <p>Year 1</p>
-            <ul>
-                <li>CCNA1 (Cisco Certified Network Associate)</li>
-                <li>CCNA2 (Cisco Certified Network Associate)</li>
-                <li>Communication and employability</li>
-                <li>Computer Systems</li>
-                <li>Controlling Systems Using IT</li>
-                <li>Event Driven Programming</li>
-                <li>Information Systems</li>
-                <li>Troubleshooting and Rrepair</li>
-                <li>Web Production</li>
-            </ul>
-            </div>
+                <hr>
 
-            <h4>Technologies used:</h4>
-            <ol>
-                <li>VisualBasic</li>
-                <li>Miscrosoft Suite</li>
-                <li>Arduino</li>
-                <li>HyperTerminal</li>
-            </ol>
+                <!-- Project Three -->
+                <div class="row">
+                  <div class="col-md-7">
+                      <video class="img-responsive" width="700" height="300" controls>
+                        <source src="res/ann.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video> 
+                  </div>
+                  <div class="col-md-5">
+                      <h3>ANN_Digits</h3>
+                      <h4>Language: Java</h4>
+                      <p>A Java implementation of a feed-forward Artificial Neural Network using stochastic gradient descent as the learning algorithm.</p>
+                      <p>This work is based on Michael Nielsen's book <a href="http://neuralnetworksanddeeplearning.com/index.html">'Neural Networks and Deep Learning.'</a></p>
+                      <p> While any 1d array of normalized (0.0-1.0) values is applicable to the network the UI is designed to process <a href="http://yann.lecun.com/exdb/mnist/">MNIST</a>'s' handwritten digit database files. UI allows specification of multi-layered network with an input, output, and any number of hidden layers. Training data batch size, learning rate (÷ by batch size) and the number of repetitions of baches as epochs can also be specified. After each epoch as the network is being trained the UI displays sample digit images from the database files, the percentage of correctly predicted digits in the test sample, and total counts per correctly recognized digit.</p>
+                      <a class="btn btn-primary" href="https://bitbucket.org/aedif/ann_ocr/">BitBucket<span class="glyphicon"></span></a>
+                  </div>
+                </div>
+                <!-- /.row -->
 
-        <hr>
+                <hr>
 
-        <!-- Footer -->
-        <footer>
-            <div class="row">
+                <!-- Project Four -->
+                <div class="row">
 
-            </div>
-            <!-- /.row -->
-        </footer>
+                  <div class="col-md-7">
+                      <video class="img-responsive" width="700" height="300" controls>
+                          <source src="res/space.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                      </video> 
+                  </div>
+                  <div class="col-md-5">
+                      <h3>SpaceShooter</h3>
+                      <h4>Language: VisualBasic</h4>
+                      <p>A simple 'Asteroids' type game. Features asteroids that change direction upon partial destruction, gravity wells that pull in objects within their radius, and enemy spaceships that follow the player and drop stat upgrades upon death.</p>
+                  </div>
+                </div>
+                <!-- /.row -->
+
+                <hr>
+
+                <!-- Project Five -->
+                <div class="row">
+                  <div class="col-md-7">
+                      <video class="img-responsive" width="700" height="300" controls>
+                          <source src="res/ccs.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                      </video> 
+                  </div>
+                  <div class="col-md-5">
+                      <h3>CandyCrushSandbox</h3>
+                      <h4>Language: Java</h4>
+                      <p>A basic sandbox implementation of the popular CandyCrush game. Sandbox displays a comparable replica of the game board state, provides a user interface to interact with it via candy switching, and means to choose from and activate multiple implementations of algorithms to automatically evaluate and perform moves on the simulated board. A number of settings are provided including the display of every available move on the board, deactivation of new candy generation, board dimensions, and selection of 'move perform' or 'move select' modes for the computer player algorithms.</p>
+
+                      <p>Display and animations are handled using <a href="https://libgdx.badlogicgames.com/">libGDX</a> game development library.</p>
+                  </div>
+                </div>
+        </div>
+      </section>
 
     </div>
-    <!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+
+    <!-- Toggling module lists-->
     <script>
-        document.getElementById('modules').style.display = "none";
-        document.getElementById('modules2').style.display = "none";
-        function toggle(id) {
-            var x = document.getElementById(id);
-            if (x.style.display === 'none') {
-                x.style.display = 'block';
-            } else {
-                x.style.display = 'none';
-            }
-        }
+      document.getElementById('modules').style.display = "none";
+      document.getElementById('modules2').style.display = "none";
+      function toggle(id) {
+          var x = document.getElementById(id);
+          if (x.style.display === 'none') {
+              x.style.display = 'block';
+          } else {
+              x.style.display = 'none';
+          }
+      }
     </script>
 
-</body>
+    <!-- Video expansion-->
+    <script> 
+        $( "video" ).attr("width", "50%"); 
+        $( "video" ).attr("height", "50%"); 
+        $( "video" ).click(function(){
+          $( "video" ).attr("height", "100%"); 
+              if(this.paused || this.ended){
+                $('section video').animate({
+                  width: "100%",
+                  height: "100%"
+                },
+                {
+                  duration: 'slow',
+                  complete: function(){
+                      video.play();
+                  }
+                });
+              } else{
+                video.pause();
+                $('section video').animate({ width: "50%" });
+              }
+            }
+        );
+    </script>
+
+  </body>
 
 </html>
