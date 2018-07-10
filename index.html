@@ -109,7 +109,7 @@
               <h3 class="mb-0">University of Leicester</h3>
               <div class="subheading mb-3">BSc Computer Science with Study Abroad</div>
               <p>Grade: 1st-class honours</p>
-              <p><button onclick="toggle('modules')"><strong>Modules taken</strong></button></p>
+              <p><a class="btn btn-primary" onclick="toggle('modules')" style="color:white" >Modules taken</a></p>
               <div id="modules">
                 <p>Year 3</p>
                 <ul>
@@ -144,7 +144,6 @@
                     <li>Databases and Web Applications</li>
                 </ul>
               </div>
-
               <h5>Technologies used:</h5>
               <ol>
                   <li>Java (extensively throughout the course)</li>
@@ -164,8 +163,11 @@
               <h3 class="mb-0">Bedford College</h3>
               <div class="subheading mb-3">BTEC Level 3 Extended Diploma in IT</div>
               <p>Grade: D*D*D*</p>
-              <p><button onclick="toggle('modules2')"><strong>Modules taken</strong></button></p>
+              <p><a class="btn btn-primary" onclick="toggle('modules2')" style="color:white" >Modules taken</a></p>
             </div>
+            <div class="resume-date text-md-right">
+                <span class="text-primary">September 2012 - July 2013</span>
+              </div>
         </div>
         <div id="modules2">
           <p>Year 2</p>
@@ -201,9 +203,6 @@
               <li>Arduino</li>
               <li>HyperTerminal</li>
           </ol>
-        <div class="resume-date text-md-right">
-          <span class="text-primary">September 2012 - July 2013</span>
-        </div>
       </div>
       </section>
 
@@ -212,18 +211,27 @@
           <h2 class="mb-5">Projects</h2>
                 <!-- Project One -->
                 <div class="row">
-                    <div class="col-md-7">
-                        <video class="img-responsive" width="700" height="300" controls>
-                          <source src="res/gallery.mp4" type="video/mp4">
-                          Your browser does not support the video tag.
-                        </video> 
+                    <div class="col-md-5">
+                        <h3>WallManager</h3>
+                        <h4>Language: Java</h4>
+                        <p>Windows slideshow wallpaper tracker. Given the update frequency of the windows wallpapaper, the program fetches the images and stores them in a buffer of a user provided size. The user can then select the images and apply tags and ratings to them. This information is stored within the image itself as windows compliant XMP metadata. Any tags saved in a IPTC segment are converted to XMP. Additionaly all previously used tags are stored in a file and are displayed in the 'tag window' for quick access in order of use frequency.</p>
+                        <a class="btn btn-primary" href="https://bitbucket.org/aedif/wallpaper-manager/" target="_blank">BitBucket<span class="glyphicon"></span></a>
+                          <a class="btn btn-primary" style="color: white" onclick="toggle('exVideo_slideshow', true)">
+                              <i class="fa fa-play-circle-o fa-lg" aria-hidden="true"></i> Video
+                          </a>
                     </div>
-                  <div class="col-md-5">
-                      <h3>WallManager</h3>
-                      <h4>Language: Java</h4>
-                      <p>Windows slideshow wallpaper tracker. Given the update frequency of the windows wallpapaper, the program fetches the images and stores them in a buffer of a user provided size. The user can then select the images and apply tags and ratings to them. This information is stored within the image itself as windows compliant XMP metadata. Any tags saved in a IPTC segment are converted to XMP. Additionaly all previously used tags are stored in a file and are displayed in the 'tag window' for quick access in order of use frequency.</p>
-                      <a class="btn btn-primary" href="https://bitbucket.org/aedif/wallpaper-manager/">BitBucket<span class="glyphicon"></span></a>
-                  </div>
+                    <br/>
+                    <div class="col-md-7" width="600" height="240">
+                      <div class="hide slideshow" id="exVideo_slideshow">
+                          <video class="img-responsive" width="100%" controls>
+                              <source src="res/gallery.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video> 
+                      </div>
+                      <div class="hide slideshow" id="projectBackground_slideshow">
+                        <img class="img-responsive"  width="100%" src="res/projectBackgroundWallpaper.png"/>
+                      </div>
+                    </div>
                 </div>
                 <!-- /.row -->
 
@@ -231,17 +239,40 @@
 
                 <!-- Project Two -->
                 <div class="row">
-                  <div class="col-md-7">
-                      <video class="img-responsive" width="700" height="300" controls>
-                        <source src="res/alti.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video> 
-                  </div>
                   <div class="col-md-5">
                       <h3>AltitudeParser</h3>
                       <h4>Language: Java</h4>
                       <p>A parser for <a href="https://altitudegame.com/">Altitude</a> game image files. Allows reading/writing of the images from/to a compressed format. Images can also be overlayed over the outlines defined in the related .poly files.</p>
                       <a class="btn btn-primary" href="https://bitbucket.org/aedif/altitudeskintool/">BitBucket<span class="glyphicon"></span></a>
+                      <a class="btn btn-primary" style="color: white" onclick="toggle('exVideo_alti', true)">
+                          <i class="fa fa-play-circle-o fa-lg" aria-hidden="true"></i> Video
+                      </a>
+                      <!--
+                      <a class="btn btn-primary" style="color: white" onclick="toggle('additional_alti', true)">
+                          <i class="fa fa-book fa-lg" aria-hidden="true"></i> Additional material
+                      </a>
+                      -->
+                  </div>
+                  <br/>
+                  <div class="col-md-7">
+                      <div class="hide alti" id="exVideo_alti" width="700">
+                        <video class="img-responsive" controls>
+                          <source src="res/alti.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video> 
+                      </div>
+                      <div class="hide alti" id="projectBackground_alti">
+                          <img class="img-responsive"  width="100%" src="res/projectBackgroundAlti.png"/>
+                      </div>
+                      <!--
+                      <div class="hide alti" id="additional_alti">
+                          <div>
+                              <a class="btn btn-primary" style="color: white" >
+                                  <i class="fa fa-plane fa-lg" aria-hidden="true"></i> Additional material
+                              </a>
+                          </div>
+                      </div>
+                      -->
                   </div>
                 </div>
                 <!-- /.row -->
@@ -250,12 +281,6 @@
 
                 <!-- Project Three -->
                 <div class="row">
-                  <div class="col-md-7">
-                      <video class="img-responsive" width="700" height="300" controls>
-                        <source src="res/ann.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video> 
-                  </div>
                   <div class="col-md-5">
                       <h3>ANN_Digits</h3>
                       <h4>Language: Java</h4>
@@ -264,6 +289,13 @@
                       <p> While any 1d array of normalized (0.0-1.0) values is applicable to the network the UI is designed to process <a href="http://yann.lecun.com/exdb/mnist/">MNIST</a>'s' handwritten digit database files. UI allows specification of multi-layered network with an input, output, and any number of hidden layers. Training data batch size, learning rate (÷ by batch size) and the number of repetitions of baches as epochs can also be specified. After each epoch as the network is being trained the UI displays sample digit images from the database files, the percentage of correctly predicted digits in the test sample, and total counts per correctly recognized digit.</p>
                       <a class="btn btn-primary" href="https://bitbucket.org/aedif/ann_ocr/">BitBucket<span class="glyphicon"></span></a>
                   </div>
+                  <br/>
+                  <div class="col-md-7">
+                      <video class="img-responsive" width="700" height="300" controls>
+                        <source src="res/ann.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video> 
+                  </div>
                 </div>
                 <!-- /.row -->
 
@@ -271,17 +303,17 @@
 
                 <!-- Project Four -->
                 <div class="row">
-
+                  <div class="col-md-5">
+                      <h3>SpaceShooter</h3>
+                      <h4>Language: VisualBasic</h4>
+                      <p>A simple 'Asteroids' type game. Features asteroids that change direction upon partial destruction, gravity wells that pull in objects within their radius, and enemy spaceships that follow the player and drop stat upgrades upon death.</p>
+                  </div>
+                  <br/>
                   <div class="col-md-7">
                       <video class="img-responsive" width="700" height="300" controls>
                           <source src="res/space.mp4" type="video/mp4">
                           Your browser does not support the video tag.
                       </video> 
-                  </div>
-                  <div class="col-md-5">
-                      <h3>SpaceShooter</h3>
-                      <h4>Language: VisualBasic</h4>
-                      <p>A simple 'Asteroids' type game. Features asteroids that change direction upon partial destruction, gravity wells that pull in objects within their radius, and enemy spaceships that follow the player and drop stat upgrades upon death.</p>
                   </div>
                 </div>
                 <!-- /.row -->
@@ -290,18 +322,19 @@
 
                 <!-- Project Five -->
                 <div class="row">
-                  <div class="col-md-7">
-                      <video class="img-responsive" width="700" height="300" controls>
-                          <source src="res/ccs.mp4" type="video/mp4">
-                          Your browser does not support the video tag.
-                      </video> 
-                  </div>
                   <div class="col-md-5">
                       <h3>CandyCrushSandbox</h3>
                       <h4>Language: Java</h4>
                       <p>A basic sandbox implementation of the popular CandyCrush game. Sandbox displays a comparable replica of the game board state, provides a user interface to interact with it via candy switching, and means to choose from and activate multiple implementations of algorithms to automatically evaluate and perform moves on the simulated board. A number of settings are provided including the display of every available move on the board, deactivation of new candy generation, board dimensions, and selection of 'move perform' or 'move select' modes for the computer player algorithms.</p>
 
                       <p>Display and animations are handled using <a href="https://libgdx.badlogicgames.com/">libGDX</a> game development library.</p>
+                  </div>
+                  <br/>
+                  <div class="col-md-7">
+                      <video class="img-responsive" width="700" height="300" controls>
+                          <source src="res/ccs.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                      </video> 
                   </div>
                 </div>
         </div>
@@ -323,18 +356,42 @@
     <script>
       document.getElementById('modules').style.display = "none";
       document.getElementById('modules2').style.display = "none";
-      function toggle(id) {
+      function toggle(id, hide = false) {
           var x = document.getElementById(id);
-          if (x.style.display === 'none') {
-              x.style.display = 'block';
+          var display = x.style.display;
+          if (display === 'none') {
+            display = 'block';
           } else {
-              x.style.display = 'none';
+            display = 'none';
           }
+          if(hide){
+            var divsToHide = document.getElementsByClassName(id.split('_')[1]); //divsToHide is an array
+            for(var i = 0; i < divsToHide.length; i++){
+                divsToHide[i].style.display = "none";
+            }
+            if(display === 'none'){
+              document.getElementById("projectBackground_" + id.split('_')[1]).style.display = 'block';
+            }
+          }
+          x.style.display = display;
+      }
+    </script>
+
+    <script>
+      var divsToHide = document.getElementsByClassName("hide"); //divsToHide is an array
+      for(var i = 0; i < divsToHide.length; i++){
+          divsToHide[i].style.display = "none";
+      }
+
+      var divsToReveal = document.querySelectorAll('[id^="projectBackground"]')
+      for(var i = 0; i < divsToReveal.length; i++){
+        divsToReveal[i].style.display = "block";
       }
     </script>
 
     <!-- Video expansion-->
-    <script> 
+    <script>
+
         $( "video" ).attr("width", "100%"); 
         $( "video" ).attr("height", "100%"); 
         $( "video" ).click(function(){
