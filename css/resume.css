@@ -11,6 +11,10 @@ body {
   }
 }
 
+.container-fluid {
+  background-color: rgba(119, 74, 8);
+}
+
 h1,
 h2,
 h3,
@@ -131,17 +135,21 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: rgb(67, 132, 252) !important;
+  background-color: rgba(119, 74, 8) !important;
 }
 
 .text-primary {
-  color: rgb(67, 132, 252) !important;
+  color: rgba(119, 74, 8) !important;
 }
 
 a {
-  color: rgb(67, 132, 252);
+  color: rgba(119, 74, 8);
 }
 
 a:hover, a:focus, a:active {
-  color: rgb(67, 132, 252);
+  color: rgb(165, 103, 11);
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: rgba(119, 74, 8) !important;
 }
