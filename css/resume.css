@@ -12,7 +12,7 @@ body {
 }
 
 .container-fluid {
-  background-color: rgba(119, 74, 8);
+  background-color: rgb(119, 74, 8);
 }
 
 h1,
@@ -48,7 +48,7 @@ h2 {
 }
 
 .list-social-icons a:hover {
-  color: #BD5D38;
+  color: #bd5d38;
 }
 
 .list-social-icons a .fa-lg {
@@ -60,7 +60,7 @@ h2 {
 }
 
 .list-icons .list-inline-item i:hover {
-  color: #BD5D38;
+  color: #bd5d38;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -135,21 +135,32 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: rgba(119, 74, 8) !important;
+  background-color: rgb(119, 74, 8) !important;
 }
 
 .text-primary {
-  color: rgba(119, 74, 8) !important;
+  color: rgb(119, 74, 8) !important;
 }
 
 a {
-  color: rgba(119, 74, 8);
+  color: rgb(119, 74, 8);
 }
 
-a:hover, a:focus, a:active {
+a:hover,
+a:focus,
+a:active {
   color: rgb(165, 103, 11);
 }
 
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-  background-color: rgba(119, 74, 8) !important;
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+  background-color: rgb(119, 74, 8) !important;
+}
+
+hr {
+  border-color: white;
+  background-color: white;
+  color: white;
 }

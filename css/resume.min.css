@@ -23,7 +23,7 @@ h6 {
   font-family: 'Saira Extra Condensed', serif;
   font-weight: 700;
   text-transform: uppercase;
-  color: rgba(119, 74, 8);
+  color: rgb(119, 74, 8);
 }
 h1 {
   font-size: 6rem;
@@ -42,7 +42,7 @@ h2 {
   color: #495057;
 }
 .list-social-icons a:hover {
-  color: rgba(119, 74, 8);
+  color: rgb(119, 74, 8);
 }
 .list-social-icons a .fa-lg {
   font-size: 1.75rem;
@@ -51,7 +51,7 @@ h2 {
   font-size: 3rem;
 }
 .list-icons .list-inline-item i:hover {
-  color: rgba(119, 74, 8);
+  color: rgb(119, 74, 8);
 }
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
@@ -119,13 +119,13 @@ section.resume-section .resume-item .resume-date {
   }
 }
 .bg-primary {
-  background-color: rgba(119, 74, 8) !important;
+  background-color: rgb(119, 74, 8) !important;
 }
 .text-primary {
-  color: rgba(119, 74, 8) !important;
+  color: rgb(119, 74, 8) !important;
 }
 a {
-  color: rgba(119, 74, 8);
+  color: rgb(119, 74, 8);
 }
 a:active,
 a:focus,
@@ -141,3 +141,10 @@ a:hover {
 .btn-primary:hover, .btn-primary:active {
     background-color: rgb(165, 103, 11) !important;
 }
+
+hr {
+    border-color: white;
+    background-color: white;
+    color: white;
+  }
+  
