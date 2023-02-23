@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Altitude Parser</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://kit.fontawesome.com/5a16b44333.js" crossorigin="anonymous"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Portfolio</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Altitude Parser</h1>
+							<ul class="actions">
+								<li><a href="https://github.com/Aedif/AltiSkinTool" class="button"><i class="fa-brands fa-github fa-2xl"></i> GitHub</a></li>
+							</ul>
+							<span class="image fit"><img src="images/altitude-parser/altitude_parser_banner.png" alt="" /></span>
+							<p>A GUI interface and Blender project to aid the viewing and creation of <a href="https://store.steampowered.com/app/41300/Altitude/">Altitude</a> video game's sprite sheets.</p>
+							<p>Showcase:</p>
+							<video src="images/altitude-parser/altitude_parser.mp4" controls="controls" muted="muted" style="max-height:800px"></video>
+
+							<hr>
+
+							<h2>Features</h2>
+
+							<h3>View Plane/Skin packs</h3>
+							<p>After pointing the program to the Altitude's 'dist' folder via 'Config > Set dist Path' the program will unpack and allow you to view plane and skin image files along with associated polygon and outline.</p>
+							<span class="image"><img src="images/altitude-parser/main_view.png" alt="" /></span>
+
+							<hr>
+
+							<h3>Sprite Sheets</h3>
+							<p>The application can generate sprite sheets, load them, and pack them back into the game readable format.</p>
+							<p>Tools > Plane Sprite Sheet</p>
+							<span class="image"><img src="images/altitude-parser/whale_0_128_5.png" alt="" /></span>
+
+							<p>Tools > Skin Sprite Sheet</p>
+							<span class="image"><img src="images/altitude-parser/whale_santa.png" alt="" /></span>
+
+							<hr>
+
+							<h3>Blender Project</h3>
+							<p>A blender project setup with rudimentary 3d models of each of the 5 planes generated using shadow carving techniques.</p>
+							<span class="image"><img src="images/altitude-parser/blender_model.png" alt="" /></span>
+							<p>In the game planes are rendered using 2 separate sprite sheets. One for the plane and one for the skin such as the Santa Hat you can see in the <b>Sprite Sheets</b> section.</p>
+							<p>Every model in the project comes with a camera/keyframe configuration corresponding to the number of frames and rotations used by the game to represent each of the planes, as well as a script to apply these rotations to any object added to the scene (e.g. the crown in the image above). When rendered the project will produce 500x500 frames that can then be converted into a sprite sheet and fed into the app.</p>
+							<p>The plane models are used to apply a transparent mask on any other objects in the scene which is useful when producing skins as in-game these are rendered on top of the planes.</p>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Martynas Vaitkus. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

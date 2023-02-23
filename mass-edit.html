@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Mass Edit</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://kit.fontawesome.com/5a16b44333.js" crossorigin="anonymous"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Portfolio</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Mass Edit</h1>
+							<ul class="actions">
+								<li><a href="https://github.com/Aedif/multi-token-edit" class="button"><i class="fa-brands fa-github fa-2xl"></i> GitHub</a></li>
+							</ul>
+							<span class="image fit"><img src="images/mass-edit/mass-edit-banner.png" alt="" /></span>
+							<p>The module is intended to aid mass-editing of game documents and sets of generic objects. Provides ways to create presets, generate macros, track document update history, randomize fields and more.</p>
+							<h3>Basic use showcase:</h3>
+							<video src="images/mass-edit/example.mp4" controls="controls" muted="muted" style="max-height:800px"></video>
+
+							<hr>
+
+							<h2>Editing</h2>
+							<p>Select the placeables you wish to edit and press <b>Shift+E</b>. You will be presented with the following modified <b>Configuration</b> window:</p>
+							<span class="image"><img src="images/mass-edit/form.png" alt="" /></span>
+							<p>Common data shared between all placeables will be highlighted as green, differing data as orange, and flags as purple. The newly added checkboxes to the right indicate which fields will be saved on Apply.</p>
+							<p>In addition to this key-binding Token and Tile HUDs will contain a new button if multiple tokens or tiles are selected which will also open up this modified configuration window.</p>
+							<span class="image"><img src="images/mass-edit/editing.gif" alt="" /></span>
+						
+							<hr>
+
+							<h2>Search</h2>
+							<p>An alternative to selecting placeables manually is to press 'Shift+F' to open a configuration window which will allow you to perform scene wide searches using the selected fields.</p>
+							<p>Text fields allow the use of wildcards: <code>*</code></p>
+							<ul>
+								<li>Goblin*</li>
+								<li>*Goblin</li>
+								<li>*Go*n*</li>
+							</ul>
+							<span class="image"><img src="images/mass-edit/search.gif" alt="" /></span>
+
+							<hr>
+
+							<h2>Copy/Paste</h2>
+							<p>Specific data can be copied from placeables using <code>Shift+C</code>. Data copied this way can be pasted on any selected or hovered over placeables using <code>Shift+V</code>. Each placeable type has it's own "clipboard" from which data will be pasted.</p>
+							<span class="image"><img src="images/mass-edit/copy-paste.gif" alt="" /></span>
+
+							<hr>
+
+							<h2>Presets</h2>
+							<p>Any configuration window opened using the module will have a 'Presets' header button. It will open up a window where you can store currently selected fields and re-use them later.</p>
+							<span class="image"><img src="images/mass-edit/presets.gif" alt="" /></span>
+
+							<hr>
+
+							<h2>Adding/Subtracting</h2>
+							<p>Numerical fields can be added and subtracted instead of overriding the current value. This can be done by right-clicking the numerical controls in the Mass-Edit form. Green background indicating addition, and red subtraction.</p>
+							<span class="image"><img src="images/mass-edit/adding-subtracting.gif" alt="" /></span>
+							
+							<hr>
+
+							<h2>Brush Tool</h2>
+							<p>This tool can be activated by clicking the brush icon in the header of Mass Edit forms.</p>
+							<p>Once selected your cursor will be transformed into a brush allowing you click and drag over placeables on the canvas to apply fields selected in the form onto them.</p>
+							<video src="images/mass-edit/brush.mp4" controls="controls" muted="muted" style="max-height:800px"></video>
+
+							<hr>
+
+							<h2>Permission Editing</h2>
+							<p>Note and Token/Actor forms will contain a 'Permissions' header button allowing you to change access for any selected note, token, or actor.</p>
+							<span class="image"><img src="images/mass-edit/permissions.png" alt="" /></span>
+
+							<hr>
+
+							<h2>View selected fields as JSON</h2>
+							<p>All Mass Edit forms have a header button <code>&lt/&gt</code> that will open up a dialog with currently selected fields displayed as JSON.</p>
+							<span class="image"><img src="images/mass-edit/json.png" alt="" /></span>
+
+							<hr>
+
+							<h2>History</h2>
+							<p>When enabled in the module settings, updates made to placeables will be tracked and available via Mass Edit forms. These updates can be selected to be applied to the currently open form or copied to the module's clipboard to be pasted on other placeables.</p>
+							<span class="image"><img src="images/mass-edit/history.gif" alt="" /></span>
+
+							<hr>
+
+							<h2>Macro Generator</h2>
+							<p>Using the selected fields the module will generate simple macros that will update/toggle data on placeables.</p>
+							<h3>Target</h3>
+							<p>Defines the target for the macro</p>
+							<ul>
+								<li>IDs of Current Selected (IDs of placeables are stored within the macro and will only affect them)</li>
+								<li>All Selected (macro will target selected placeables at run-time)</li>
+								<li>All in active Scene (macro will target all placeable on the active scene)</li>
+								<li>Tagger (macro will target Tagger module's tags)</li>
+							</ul>
+							<h3>Method</h3>
+							<p>How the fields should be be applied</p>
+							<ul>
+								<li>Update (direct update)</li>
+								<li>Toggle (2 alternating updates)</li>
+							</ul>
+							<p>Randomization and Add/Subtract operators are supported but will add a dependency and require Mass Edit to be active when they are run.</p>
+
+							<h4>Example video:</h4>
+							<video src="images/mass-edit/macro.mp4" controls="controls" muted="muted" style="max-height:800px"></video>
+
+							<hr>
+
+							<h2>Randomization</h2>
+							<p>At the moment a <a href="https://www.patreon.com/Aedif">Patreon</a> exclusive feature.</p>
+							<p>Randomize any numerical, color, text, image, drop-down, or coordinate values.</p>
+							<video src="images/mass-edit/randomizer.mp4" controls="controls" muted="muted" style="max-height:800px"></video>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Martynas Vaitkus. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
